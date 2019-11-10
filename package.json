@@ -24,5 +24,6 @@
     "@babel/preset-react": "^7.7.0",
     "babel-loader": "^8.0.6",
     "webpack-cli": "^3.3.10"
-  }
+  },
+  "keywords": ["react list", "list hooks", "select list", "check list item", "react list hooks"]
 }
