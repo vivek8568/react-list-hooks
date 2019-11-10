@@ -58,7 +58,7 @@ class App extends Component {
 export default App;
 ```
 #### Components
-* **List** - A component that render the list of items.
+* **List** - A component that renders the list of items.
     
   Available options with example values:
   ```bash
@@ -94,7 +94,7 @@ export default App;
   :--------:|:-----:|:-------:|:--------:|:-----------:
   id| Any | yes | - | Unique item id.   
   
-* **ToggleSubList** - A component that enable/disable a sub list based on its parent ID.
+* **ToggleSubList** - A component that enable/disable a sub list based on its parent list item ID.
 
   Available options with example values:
   ```bash
