@@ -1,18 +1,18 @@
 # react-list-hooks
 React Components for handling item selection in a list. This is based on compound components pattern with hooks and context where state is implicitly handled.
 
-##Getting Started
+## Getting Started
 
-###General prerequisites 
+### General prerequisites 
  * React 16.8+
  
-###Installation
+### Installation
 See [npm documentation](https://docs.npmjs.com/) on how to get started with npm.
 ```bash
 npm install --save react-list-hooks
 ```
-###Using
-####Basic usage example
+### Using
+#### Basic usage example
 Import into your React project and render a list:
 ```bash
 import { ListContext, List, ListItem } from 'react-list-hooks';
