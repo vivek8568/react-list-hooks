@@ -1,7 +1,12 @@
 # react-list-hooks
 React Components for handling item selection in a list. This is based on compound components pattern with hooks and context where state is implicitly handled.
 
-![GIF demo](resources/gif/demo.gif)
+## Demo
+You can customize your list styling by your own. No need to worry about the state, that will be handled by **react-list-hooks**. 
+
+Check box list             |  Button List             |
+:-------------------------:|:-------------------------:
+![GIF demo](resources/gif/demo.gif)   |  ![GIF demo](resources/gif/button-demo.gif)
 
 ## Getting Started
 
