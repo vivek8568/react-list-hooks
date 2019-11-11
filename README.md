@@ -6,7 +6,7 @@ You can customize your list styling and add sub lists to any level down. No need
 
 Check box list             |  Button List             
 :-------------------------:|:-------------------------:
-![GIF demo](resources/gif/demo.gif)   |  ![GIF demo](resources/gif/button-demo.gif)
+![CheckBox demo](https://drive.google.com/open?id=1WPMRXRzj18ORQ0Xb9zKEWsWqc083kTcd)   |  ![Button list demo](https://drive.google.com/open?id=1H78rKEsZ_q-FLsJXHrhauhYsUkBn4Kt5)
 
 ## Getting Started
 
