@@ -28,7 +28,7 @@ Import into your React project and render a list:
 
 ```bash
 //JS File
-import { ListContext, List, ListItem } from 'react-list-hooks';
+import { ListContext, List, ListItem, ToggleSubList, ToggleListItem } from 'react-list-hooks';
 
 const TextWithCheckBox = ({isSelected, id, displayValue, customClass}) => {
     const {updateList} = useContext(ListContext);
