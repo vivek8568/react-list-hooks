@@ -6,7 +6,7 @@ You can customize your list styling and add sub lists to any level down. No need
 
 Check box list             |  Button List             
 :-------------------------:|:-------------------------:
-![CheckBox demo](https://drive.google.com/open?id=1WPMRXRzj18ORQ0Xb9zKEWsWqc083kTcd)   |  ![Button list demo](https://drive.google.com/open?id=1H78rKEsZ_q-FLsJXHrhauhYsUkBn4Kt5)
+![Check box demo](https://drive.google.com/uc?export=view&id=1WPMRXRzj18ORQ0Xb9zKEWsWqc083kTcd)   |  ![Button list demo](https://drive.google.com/uc?export=view&id=1H78rKEsZ_q-FLsJXHrhauhYsUkBn4Kt5)
 
 ## Getting Started
 
@@ -22,6 +22,11 @@ npm install --save react-list-hooks
 #### Basic usage example
 Import into your React project and render a list:
 ```bash
+
+//CSS File
+.is-disabled {pointer-event: none; opacity: 0.5;}
+
+//JS File
 import { ListContext, List, ListItem } from 'react-list-hooks';
 
 const TextWithCheckBox = ({isSelected, id, displayValue, customClass}) => {
@@ -39,17 +44,34 @@ class App extends Component {
     return (
       <div>  
           <h1>Fruits List</h1>  
-          <List>
-              <ListItem id='apple'>
-                  <TextWithCheckBox displayValue='Apple' />
-              </ListItem>
-              <ListItem id='banana'>
-                  <TextWithCheckBox displayValue='Banana' />
-              </ListItem>
-              <ListItem id='guava'>
-                  <TextWithCheckBox displayValue='Guava' />
-              </ListItem>
-          </List>
+           <List>
+                <ListItem id='apple'>
+                    <TextWithCheckBox displayValue='Apple' />
+                </ListItem>
+                    {/*Sub List enable/disable based on parent list item id*/}
+                    <ToggleSubList whenActive='apple' disableClass='is-disabled'>
+                        <List customClass='sub-list'>
+                            <ListItem id='red'>
+                                <TextWithCheckBox displayValue='Red Apple' />
+                            </ListItem>
+                            <ListItem id='green'>
+                                <TextWithCheckBox displayValue='Green Apple' />
+                            </ListItem>
+                        </List>
+                    </ToggleSubList>
+                <ListItem id='banana'>
+                    <TextWithCheckBox displayValue='Banana' />
+                </ListItem>
+                <ListItem id='orange'>
+                    <TextWithCheckBox displayValue='Orange' />
+                </ListItem>
+                {/*List Item enable/disable based on sibling list item id*/}
+                <ToggleListItem id='sour' whenActive='orange' disableClass='is-disabled'>
+                    <ListItem id='sour'>
+                        <TextWithCheckBox displayValue='Sour Orange' />
+                    </ListItem>
+                </ToggleListItem>
+            </List>
       </div>
     );
   }
