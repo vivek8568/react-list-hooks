@@ -22,10 +22,11 @@ npm install --save react-list-hooks
 #### Basic usage example
 Import into your React project and render a list:
 ```bash
-
 //CSS File
 .is-disabled {pointer-event: none; opacity: 0.5;}
+```
 
+```bash
 //JS File
 import { ListContext, List, ListItem } from 'react-list-hooks';
 
