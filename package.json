@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "react": "^16.11.0",
-    "webpack": "^4.41.2"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
@@ -23,7 +23,7 @@
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "babel-loader": "^8.0.6",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^5.0.1"
   },
   "keywords": ["react list", "list hooks", "select list", "check list item", "react list hooks"]
 }
